@@ -1,0 +1,43 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "finall": "parcel finall/index.html",
+    "deploy:src": "parcel build src/index.html --public-url ./",
+    "deploy:finall": "parcel build finall/index.html --public-url ./",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "^3.5.10",
+    "@types/react": "^17.0.40",
+    "apollo-link-context": "^1.0.20",
+    "date-fns": "^2.28.0",
+    "graphql": "^15.8.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.0",
+    "react-router-dom": "^6.2.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@testing-library/cypress": "^8.0.2",
+    "babel-core": "^6.26.3",
+    "babel-plugin-styled-components": "^2.0.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "cypress": "^9.5.1",
+    "graphql-request": "^4.1.0",
+    "parcel": "^2.3.2",
+    "prettier": "^2.5.1",
+    "test-data-bot": "^0.8.0"
+  }
+}
